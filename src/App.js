@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './App.scss';
 import ColorBox from './components/ColorBox';
 import PostList from './components/PostList';
+import AlbumFeature from './features/Album';
+import TodoFeature from './features/Todo';
 
 function App() {
 
@@ -27,8 +29,8 @@ function App() {
   return (
     <div className="App">
       <h1>Post list</h1>
-      <PostList posts={postList}></PostList>
-
+      {/*<PostList posts={postList}></PostList>*/}
+      <AlbumFeature></AlbumFeature>
     </div>
   );
 }
